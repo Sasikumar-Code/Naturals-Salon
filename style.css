@@ -1,0 +1,1837 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+:root{
+    --white: white;
+    --blue:blue;
+    --purple:rgb(115, 32, 209);
+    --skyblue: rgb(11, 185, 185);
+    --wheat:rgb(168, 170, 112);
+    --black:black;
+    --text:rgb(65, 26, 154);
+    --pink: rgba(241, 132, 251, 0.453);
+    --green:green;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+
+html{
+    z-index: 1;
+}
+
+/* navbar */
+
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: var(--white);
+    transition: 0.6s;
+    position: fixed;
+    box-shadow: 0px 15px 10px -15px #1111112d;   
+}
+
+nav ul{
+    z-index: 2;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 50px; 
+    float: left;
+}
+
+.checkbtn {
+    color: rgb(83, 11, 185);
+    cursor: pointer;
+    line-height: 0px;
+    display: none;
+    float: right;
+}
+
+.check {
+    display: none;
+}
+
+    
+
+/* slider */
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+/* part 1 */
+
+.swiper .part1{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(83, 11, 185);
+    height: 100vh;
+}
+
+.swiper .part1 .content1{
+    margin-top: 20%;
+}
+
+.swiper .part1 .content1 h1{
+    color: var(--white);
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part1 img{
+    margin-top: 5%;
+}
+
+.swiper .part1 .content1 h5{
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiper .part1 .content1 button{
+    padding: 10px 15px;
+    border-radius: 40px;
+    color: rgb(83, 11, 185);
+    border: 2px solid rgb(83, 11, 185);
+    margin-top: 50px;
+}
+
+.swiper .part1 .content1 button:hover{
+    background-color: rgb(83, 11, 185);
+    border: 2px solid var(--white);
+    color: var(--white);
+} 
+
+
+/* part 2  */
+
+.swiper .part2{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(11, 185, 185);
+    height: 100vh;
+}
+
+.swiper .part2 .content2{
+    margin-top: 20%;
+    margin-left: 40px;
+}
+
+.swiper .part2 .content2 h1{
+    color: var(--white);
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part2 .content2 h5{
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+ .swiper .part2 .content2 button{
+    padding: 10px 15px;
+    border-radius: 40px;
+    color:  rgb(11, 185, 185);
+    border: 2px solid  rgb(11, 185, 185);
+    margin-top: 50px;
+}
+
+.swiper .part2 .content2 button:hover{
+    background-color:  rgb(11, 185, 185);
+    border: 2px solid var(--white);
+    color: var(--white);
+} 
+
+/* part 3 */
+
+.swiper .part3{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: var(--wheat);
+    height: 100vh;
+}
+
+.swiper .part3 .content3{
+    margin-top: 15%;
+}
+
+.swiper .part3 .content3 h1{
+    color: var(--white);
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part3 img{
+    margin-top: 5%;
+}
+
+.swiper .part3 .content3 h5{
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiper .part3 .content3 button{
+    padding: 10px 15px;
+    border-radius: 40px;
+    color: var(--wheat);
+    border: 2px solid var(--wheat);
+    margin-top: 50px;
+}
+
+.swiper .part3 .content3 button:hover{
+    background-color: var(--wheat);
+    border: 2px solid var(--white);
+    color: var(--white);
+
+} 
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: var(--white);
+}
+
+/* whatsapp */
+
+.whatsapp{
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 35%;
+    
+}
+
+.whatsapp a{
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 13px 1px 13px;
+}
+
+.whatsapp a i{
+    padding: 10px;
+    font-size: 30px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.whatsapp a i:hover{
+    color: var(--text);
+    
+}
+
+/* gotop */
+
+.gotop{
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 40%;
+    
+}
+
+.gotop a i{
+    padding: 5px;
+    font-size: 30px;
+    background: rgba(4, 83, 43, 0.225);
+    border-radius: 5%;
+    color: #fff;
+}
+
+.gotop a i:hover{
+    background: rgba(67, 67, 66, 0.636);
+}
+
+.letterspace{
+    letter-spacing: 4px;
+}
+/* second */
+
+.second{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 0;
+}
+.seclef{
+    width:44%;
+    margin-left: 0%;
+    background-repeat: no-repeat;
+    background-image: url(images/Makeupbrush.webp);
+}
+.seclef h1{
+    color: var(--text);
+    font-size: 50px;
+    margin-top: 5%;
+    margin-left: 12%;
+    font-weight: lighter;
+
+}
+.seclef p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+.secright{
+    margin-left: 5%;
+    width: 44%;
+    margin-right: 3%;    
+}
+.secrightdiv{
+    display: flex;
+    list-style: none;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+.secright .num{
+    font-size: 48px;  
+    padding-right: 90px;
+    padding-left: 50px; 
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.secright .num3{ 
+    padding-right: 90px; 
+    padding-left: 50px;
+    font-size: 48px;  
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.secright .num2{
+    padding-right: 90px; 
+    font-size: 48px; 
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.secright .secrightcont1{
+    margin-left: 0px;
+}
+
+.secright .secrightcont{
+    margin-left: 50px;
+}
+
+.secright .num span{
+    font-weight: bold;
+}
+
+.secrightcont{
+    font-size: 23px;
+}
+
+#bar{
+    box-shadow: 0.1px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+.secright .num span{
+    color: var(--text);
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.secright p{
+    padding-top: 50px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    margin-left: 10px;
+}
+
+/* -------- Magi --------- */
+.magi{
+    text-align: center;
+    margin-top: -12%;
+    margin-bottom: 60px;
+}
+.magi p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.magi h1{
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--text);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+.twoimg{
+    display: flex;
+    margin-top: 1%;
+}
+.twoimg1{
+    background-image: url(images/gorgeousgirl.webp);
+    width: 44%;
+    background-repeat: no-repeat;
+    height: 440px;
+    margin-left: 6%;
+    margin-right: 6px;
+}
+.twoimg2{
+    background-color: rgb(251, 233, 252);
+    width: 44%;
+    height: 440px;
+    margin-right: 6%;
+    margin-left: 6px;
+}
+.twoimg2 p{
+    margin-left: 10%;
+    margin-top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.twoimg2 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    font-weight: 700;
+    margin-top: 5%;
+    font-weight: lighter;
+}
+.twoimg2 span{
+    font-weight: 500;
+}
+.twoimg2 button{
+    background-color: var(--blue);
+    padding: 8px 40px;
+    border-color: var(--blue);
+    border-radius: 40px;
+    font-size: 18px;
+    color: var(--white);
+    margin-left: 50px;
+    margin-top: 40px;
+    transition: 0.4s;
+    
+
+}
+.twoimg2 button:hover{
+    cursor: pointer;
+    background-color: rgb(251, 233, 252);
+    color: rgb(89, 18, 203);
+    border-color: rgb(89, 18, 203);
+}
+.oneimg{
+    margin-top: 1.5%;
+    background-image: url(images/genelia.jpg);
+    width: 88%;
+    margin-left: 6%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 440px;
+    color: white;
+}  
+.oneimg p{
+    padding-top: 50px;
+    margin-left: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+.oneimg h1{
+    margin-left: 6%;
+    margin-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+
+}
+.oneimg button{
+    background-color: white;
+    padding: 8px 40px;
+    border-color: white;
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgb(89, 18, 203);
+    margin-left: 60px;
+    margin-top: 100px;
+    transition: 0.4s;
+}
+.oneimg button:hover{
+    cursor: pointer;
+    background-color: rgb(89, 18, 203);
+    color: white;
+    border-color: white;
+}
+.sectwoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+    gap: 1rem;
+}
+.sectwoimg1{
+    background-image: url(images/hairstyling.webp);
+    width: 44%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;
+    margin-left: 6%;
+}
+.sectwoimg2{
+    background-color: rgb(89, 18, 203);
+    width: 44%;
+    height: 440px;
+    margin-right: 6%;
+}
+.sectwoimg2 p{
+    margin-left: 10%;
+    margin-top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sectwoimg2 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+    line-height: 40px;
+}
+.sectwoimg2 button{
+    background-color: white;
+    padding: 8px 40px;
+    border-color: white;
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgb(89, 18, 203);
+    margin-left: 50px;
+    margin-top: 60px;
+    transition: 0.4s;
+
+}
+.sectwoimg2 button:hover{
+    cursor: pointer;
+    background-color: rgb(89, 18, 203);
+    color: white;
+    border-color: white;
+}
+
+.seventh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    background-image: url(images/naturals.webp);
+    background-position: center;
+    height: 400px;   
+}
+
+.seventh-content{
+    width: 43%;
+}
+
+.seventh-content h5{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    line-height: 1.5px;
+}
+
+.seventh-content h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: serif;
+    color: var(--text);
+}
+
+.seventh-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.seventh-image{
+    height: 400px;
+    width: 38%;
+    overflow: hidden;
+}
+
+.seventh-content button{
+    background-color:  rgb(89, 18, 203);
+    padding: 8px 40px;
+    border-color: white;
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    transition: 0.4s;
+}
+
+
+
+.seventh-content button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-color:  rgb(89, 18, 203);
+    color: rgb(89, 18, 203);
+}
+
+/* section 7  slider 2 */
+.seventh-image {
+    width: 44%;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.wrapper img{
+    width: 100%;
+    height: 400px;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    
+    50%{
+        transform: translateX(-100%);
+    }
+    75%{
+        transform: translateX(0);
+    }
+   
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.makeup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image: url(images/Union-3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+
+} 
+.makeup1{
+    background-image: url(images/makeuping.webp);
+    margin-top: 10%;
+    width: 44%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;   
+}
+.makeup2{
+    margin-top: 10%;
+    width: 44%;
+    height: 440px;
+}
+
+.makeup2 p{
+        margin-top: 0;
+        margin-left: 1%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+.makeup2 h1{
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 1%;
+        font-size: 45px;
+        margin-top: 5%;
+        font-weight: lighter;
+        color: var(--text);
+    }
+
+.makeup2 #p{
+        font-size: 17px;
+        opacity: 60%;
+        margin-left: 1%;
+        margin-top: 6%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.makeup2 button{
+        background-color: var(--blue);
+        padding: 8px 40px;
+        border: 1px solid var(--blue);
+        border-radius: 40px;
+        font-size: 18px;
+        color: var(--white);
+        margin-top: 10px;
+        margin-left: 1%;
+        transition: 0.4s;
+
+    
+}
+.makeup2 button:hover{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(89, 18, 203);
+        border-color: rgb(89, 18, 203);
+}
+
+/* --------------------- Customer Testimonials ------------------------- */
+.tenth{
+    margin-top: 3rem;
+}
+
+.tenth .details-3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tenth .details-3 h5{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.tenth .details-3 h1{
+    color: var(--text);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+
+
+/* --------------------- Stylist Container ----------------------- */
+
+
+.stylist-container{
+    margin-top: 8rem;
+    background-image: url(images/Scissors.webp);
+    background-position: right;
+}
+
+.stylist-container .details-2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stylist-container .details-2 h5{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.stylist-container .details-2 h1{
+    color: var(--text);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.image-contain{
+    position: relative;
+    
+}
+
+.stylist-container .stylists .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: var(--pink);
+    cursor: pointer;
+}
+
+.overlay .overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: var(--white);
+    text-align: center;
+}
+
+#person1{
+    left: 22%;
+}
+
+.overlay-content h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.overlay-content h6{
+    font-size:15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.image-contain:hover .overlay{
+    opacity: 0.8;
+}
+
+.stylists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.artistbefore p{
+    padding-top: 80px;
+    margin-left: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.artistbefore h1{
+    margin-left: 6%;
+    font-size: 55px;
+    color: rgb(89, 18, 203);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+/*------------------- slider3 -------------------*/
+  
+.containslide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.containslide .carosal-effect{
+    width: 70%;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.containslide .carosals{
+    width: 500%;
+    height: 270px;
+    display: flex;
+}
+  
+.containslide .carosals input{
+    display: none;
+}
+  
+.containslide .selection{
+    width: 20%;
+    transition: 2s;
+}
+
+.containslide .selection img{
+    width: 100%;
+    height: 270px;
+}
+
+.mob-image{
+    display: none;
+
+}
+
+
+/*css for manual slide navigation*/
+  
+.navigation-manual{
+  position: absolute;
+  width: 73%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.manual-btn{
+  border: 1px solid #000000;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 10px;
+}
+
+.manual-btn:hover{
+  background: #000000;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+  
+  /*css for automatic navigation*/
+  
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 73%;
+  justify-content: center;
+  margin-top: 310px;
+  gap: 0rem;
+}
+
+.navigation-auto div{
+  border: 1px solid #000000;
+  padding: 4px;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #000000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #000000;
+}
+
+        
+
+/* video */
+.video{
+    text-align: center;
+    margin-top: 200px;
+    background-image: url(images/leaf.webp);
+    background-repeat: no-repeat;
+    background-position:left;
+}
+
+.video iframe{
+    height:600px;
+    width: 75%;
+}
+
+/* footer */
+footer{
+    background-color: var(--text);
+    margin-top: 100px;
+}
+
+footer h5{
+    color: var(--white);
+    cursor: pointer;
+}
+
+footer li{
+    list-style: none;
+    margin-bottom: 8px;
+    
+}
+
+footer li a{
+    text-decoration: none;
+    color: var(--white); 
+    font-size: 15px;
+}
+
+footer p{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+footer #locate{
+    background: none;
+    color: var(--white);
+    border: none;
+    font-size: 20px;
+}
+
+footer #locate span{
+    font-size: 15px;
+}
+
+footer .social_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer .social_links i{
+    color:  var(--blue);
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer .social_links i:hover{
+    color: var(--white);
+    background-color: rgb(86, 39, 174);
+}
+
+footer .copyright{
+    display: flex;
+    font-display: row;
+    justify-content:space-around;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.664);
+    padding-top: 10px;
+}
+
+footer .copyright .rights{
+    margin-right: 600px;
+}
+
+footer .copyright .developer{
+    margin-right: 30px;
+}
+
+footer .copyright .developer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------Mobile Devices---------------------------- */
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+
+
+    .menu {
+      display: block;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    nav{
+        height: 55px;
+        max-width: 100%;
+    }
+
+    nav ul {
+      position: fixed;
+      width: 100%;  
+      top: 40px;
+      transition: 1s;
+      background-color: white;
+    }
+
+    nav ul li {
+      display: block;
+      margin: 10px 50px;
+      padding: 5px 10px;
+      border-bottom: 1px solid rgba(104, 104, 104, 0.175);
+    }
+
+    nav .logo img{
+        height: 40px;
+    }
+
+    .lastline{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    nav ul li a {
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+
+    .checkbtn {
+      display: block;
+      margin-right: 10px;
+      font-size: 25px;
+    }
+
+    .check:checked ~ ul {
+      left: 100%;
+    }
+
+
+
+
+/* --------- Swiper ------------ */
+
+
+.swiper {
+    width: 100%;
+    height: 45vh;
+}
+
+/* part 1 */
+
+.swiper .part1{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(83, 11, 185);
+    height: 45vh;
+}
+
+.swiper .part1 .content1{
+    margin-top: 15%;
+}
+
+.swiper .part1 .content1 h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part1 img{
+    margin-top: 15%;
+}
+
+.swiper .part1 .content1 h5{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiper .part1 .content1 button{
+    padding: 4px 6px;
+    border: 1px solid rgb(83, 11, 185);
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* part 2  */
+
+.swiper .part2{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(11, 185, 185);
+    height: 45vh;
+}
+
+.swiper .part2 .content2{
+    margin-top: 15%;
+    margin-left: 40px;
+}
+
+.swiper .part2 .content2 h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part2 img{
+    margin-top: 10%;
+}
+
+.swiper .part2 .content2 h5{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+ .swiper .part2 .content2 button{
+    padding: 4px 6px;
+    border: 1px solid  rgb(11, 185, 185);
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+/* part 3 */
+
+.swiper .part3{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(186, 190, 159);
+    height: 45vh;
+}
+
+.swiper .part3 .content3{
+    margin-top: 15%;
+}
+
+.swiper .part3 .content3 h1{
+    color:#fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.swiper .part3 img{
+    margin-top: 15%;
+}
+
+.swiper .part3 .content3 h5{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiper .part3 .content3 button{
+    padding: 4px 6px;
+    border: 1px solid rgb(186, 190, 159);
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    display: none;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+}
+
+/* ----- Whatsapp ----- */
+
+
+
+.whatsapp{
+    z-index: 2;
+    position: fixed;
+    right: 5px;
+    top: 450px;
+}
+
+.whatsapp a i{
+    font-size: 30px;
+    background: var(--green);
+    color: var(--white);
+    padding: 10px;
+    opacity: 60%;
+}
+
+.whatsapp a i:hover{
+    background: rgb(111, 179, 8);   
+}
+
+
+/* gotop */
+
+.gotop{
+    right: 5px;
+    top: 530px;   
+}
+
+.gotop a i{
+    font-size: 30px;
+}
+
+
+/* -------------------second------------------ */
+
+.second{
+    margin-top: 5%;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    margin-bottom: 0;
+    background-image: url(images/Makeupbrush.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 400px;
+   
+    
+}
+.seclef{
+    width:100%;
+   
+}
+.seclef h1{
+   
+    font-size: 25px;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: -8px;
+}
+.seclef p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: -8px;
+}
+.secright{
+    width: 90%;    
+}
+.secrightdiv{
+    display: block;
+    width: 98%;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.secright .num{
+    font-size: 25px;
+}
+
+.secright .num3{ 
+    
+    font-size: 25px;  
+    font-weight: bolder;
+    color: rgb(79, 9, 176);
+}
+
+.secright .num2{
+    margin-left: 50px;
+    font-size: 25px; 
+    font-weight: bolder;
+    color: rgb(79, 9, 176);
+}
+.secright .secrightcont1 {
+    margin-left: 50px;
+}
+
+
+
+.secrightcont {
+    
+    font-size: 15px;
+    
+}
+
+#bar{
+    box-shadow:none;
+
+}
+
+.secright .num span{
+    color:  rgb(83, 11, 185);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.secright p{
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* -------- Magi --------- */
+.magi{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 440;
+    margin-top: 25%;
+}
+.magi p{
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.magi h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 5px;
+    color: rgb(79, 14, 158);
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* --------------------Jwelery Girl--------------------- */
+
+
+.twoimg{
+    display: block;
+    width: 90%;
+    height: 680px;
+}
+.twoimg1{
+    background-image: url(images/gorgeousgirl.webp);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;
+    margin-top: 5%;
+}
+.twoimg2{
+    background-color: rgb(251, 233, 252);
+    width: 100%;
+    height: 240px;
+    margin-left: 6%;
+    margin-top: -76px;
+}
+.twoimg2 p{
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.twoimg2 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: lighter;
+    line-height: 35px;
+}
+.twoimg2 span{
+    font-weight: 500;
+}
+.twoimg2 button{
+   
+    padding: 8px 30px;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 0px;
+    
+
+}
+.twoimg2 button:hover{
+    cursor: pointer;
+    background-color: rgb(251, 233, 252);
+    color: rgb(89, 18, 203);
+    border-color: rgb(89, 18, 203);
+}
+
+
+
+/* ------------ Jenilia Img ------------*/
+
+
+.oneimg{
+    margin-top: 5%;
+    background-image: url(images/genelia.jpg);
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: fixed;
+    height: 440px;
+    color: white;
+}  
+.oneimg p{
+    padding-top: 80px;
+    margin-left: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+.oneimg h1{
+    margin-left: 6%;
+    margin-top: 18%;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+
+}
+.oneimg button{
+    
+    padding: 8px 30px;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.oneimg button:hover{
+    cursor: pointer;
+    background-color: rgb(89, 18, 203);
+    color: white;
+    border-color: white;
+}
+
+/* ------------------------ Hairstyling --------------------------- */
+
+.sectwoimg{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.sectwoimg1{
+    background-image: url(images/hairstyling.webp);
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;
+    margin-left: 5%;
+    
+}
+.sectwoimg2{
+    background-color: rgb(89, 18, 203);
+    width: 90%;
+    height: 240px;
+    margin-left: 5%; 
+    margin-top: -112px;
+}
+.sectwoimg2 p{
+    
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sectwoimg2 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2%;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+}
+.sectwoimg2 button{
+    margin-left: 70px;
+    padding: 8px 30px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+
+.seventh{
+    display: block; 
+    padding: 10px;
+    width: 98%;
+    background-size: 380px;
+    margin-left: -4px;
+}
+
+.seventh-content{
+    width: 98%;
+    height: 240px;
+    margin-top: -4px;
+    padding: 40px 10px;
+    margin-left: 8px;
+}
+
+.seventh-content h5{
+    margin-top: 0;
+}
+
+.seventh-content p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.seventh-image{
+    width: 100%;
+    margin-left: 8px;
+    margin-top: 200px;
+
+}
+
+.seventh-content button{
+    padding: 8px 30px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.wrapper{
+    height: 260px;
+    width: 320px;
+}
+
+.wrapper img{
+    height: 260px;
+    width: 2000px;
+    border-radius: 3px;
+}
+
+
+/* --------------- Make Up --------------- */
+.makeup{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Union-3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 90%;
+
+}
+.makeup1{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 500px;
+    
+}
+.makeup2{
+    margin-top: 5%;
+    width: 90%;
+    height: 440px;
+    margin-left: 5%;
+}
+
+.makeup2 p{
+        font-size: 15px;
+        
+    }
+
+.makeup2 h1{
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 5%;     
+    }
+
+.makeup2 #p{
+        font-size: 14px;
+        margin-left: 1%;
+        padding-top: 20px;
+        line-height: 30px;
+}
+
+.makeup2 button{
+        padding: 8px 30px;
+        font-size: 15px;
+        margin-top: 10px;
+
+    
+}
+
+/* ------------------------------------ Customer Testimonials -------------------------- */
+
+.tenth .details-3{
+    margin-top: 50px;
+}
+
+.tenth .details-3 h5{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.tenth .details-3 h1{
+    color: var(--text);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* ------------------------- Popular Stylist ------------------------- */
+
+
+.stylist-container{
+    margin-top: 1rem;
+    background-size: 650px;
+}
+
+.stylist-container .details-2 h5{
+    font-size: 15px;
+    letter-spacing: 2px;
+    
+}
+
+.stylist-container .details-2 h1{
+    color: var(--text);
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+.stylists{
+    display: block;
+    gap: 0;
+    padding: 0;
+    margin-left: 15.5%;
+   
+}
+
+.image-contain{
+    height: 350px;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+.image-contain img{
+    height: 350px;
+    width: 270px;
+    border-radius: 3px;
+}
+
+
+/* --------------------------- Artist Before ------------------------- */
+.artistbefore {
+    text-align: center;
+}
+.artistbefore p{
+    padding-top: 5%;
+    font-size: 15px;
+
+}
+
+.artistbefore h1 {
+    font-size: 25px;
+}
+
+/*--------------------------- slider3------------------------ */
+
+.containslide{
+    margin-top: 80px;
+}
+
+#lap{
+    display: none;
+
+}
+
+.mob-image{
+    display: block;
+    text-align: center;
+}
+
+.mob-image h5{
+    margin-top: 5px;
+    color: var(--text);
+}
+
+.mob-image h4{
+    margin-top: 10px;
+}
+
+.mob-image p{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#mob{
+    height: 90px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.navigation-auto{
+    margin-top: 280px;
+}
+
+.navigation-manual{
+    margin-top: 10px;
+}
+  
+        
+
+/* video */
+.video{
+    margin-top: 100px;
+    background-size: 80px;
+}
+
+.video iframe{
+    height:200px;
+    width: 80%;
+}
+
+
+
+/* footer */
+footer {
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+footer li a{
+    text-decoration: none;
+    color:white;  
+    font-size: 18px;
+}
+
+footer p{
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+footer #locate{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+footer #locate span{
+    font-size: 16px;
+}
+
+footer .social_links{
+    display: block;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer .copyright{
+    display: flex;
+    font-display: row;
+    justify-content:space-around;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.664);
+    padding-top: 10px;
+}
+
+footer .copyright .rights{
+    margin-right: -0px;
+}
+
+footer .copyright .developer{
+    margin-right: 0px;
+}
+
+footer .copyright .developer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+}
